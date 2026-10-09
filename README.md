@@ -1,4 +1,4 @@
-# 🚀 Crypto Trading & Wallet Platform · Enterprise REST API Backend
+# Crypto Trading & Wallet Platform · Enterprise REST API Backend
 
 [![Java](https://img.shields.io/badge/Java-17-orange.svg)](https://www.oracle.com/java/)
 [![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.2.4-brightgreen.svg)](https://spring.io/projects/spring-boot)
@@ -14,7 +14,7 @@ Built with a strong emphasis on **clean architecture**, **SOLID design principle
 
 ---
 
-## 🏛️ Architecture Overview
+## Architecture Overview
 
 The system strictly adheres to the **Layered (3-Tier) Architecture** to ensure clean separation of concerns, high testability, and seamless maintainability:
 
@@ -62,7 +62,7 @@ flowchart TD
 
 ---
 
-## ✨ Key Features & Engineering Highlights
+## Key Features & Engineering Highlights
 
 ### 1. Separation of Concerns & Single Responsibility Principle (SRP)
 * **Controllers** handle HTTP routing, request decoding, header negotiation, and Jakarta validation (`@Valid`).
@@ -85,7 +85,7 @@ flowchart TD
 
 ---
 
-## 🗄️ Domain Model
+## Domain Model
 
 ```mermaid
 erDiagram
@@ -142,7 +142,7 @@ erDiagram
 
 ---
 
-## 📡 REST API Reference
+## REST API Reference
 
 All endpoints are organized under the `/api/v1` namespace and documentable via Swagger UI:
 
@@ -172,7 +172,7 @@ All endpoints are organized under the `/api/v1` namespace and documentable via S
 
 ---
 
-## 🛠️ Tech Stack & Dependencies
+## Tech Stack & Dependencies
 
 * **Language:** Java 17 (LTS)
 * **Framework:** Spring Boot 3.2.4
@@ -186,7 +186,7 @@ All endpoints are organized under the `/api/v1` namespace and documentable via S
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 * **Java Development Kit (JDK) 17** or higher installed.
@@ -222,7 +222,7 @@ All endpoints are organized under the `/api/v1` namespace and documentable via S
 
 ---
 
-## 👤 Author
+## Author
 
 **Dan Lucian Ghilea**  
 *MSc Student in Applied Informatics in Complex Systems · Technical University of Cluj-Napoca (TUCN)*  
@@ -232,6 +232,6 @@ All endpoints are organized under the `/api/v1` namespace and documentable via S
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the [MIT License](LICENSE).
