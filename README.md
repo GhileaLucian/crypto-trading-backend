@@ -1,4 +1,4 @@
-# Crypto Trading & Wallet Platform · Enterprise REST API Backend
+# Crypto Trading & Wallet Platform · RESTful API Backend
 
 [![Java](https://img.shields.io/badge/Java-17-orange.svg)](https://www.oracle.com/java/)
 [![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.2.4-brightgreen.svg)](https://spring.io/projects/spring-boot)
@@ -8,15 +8,15 @@
 [![OpenAPI 3](https://img.shields.io/badge/OpenAPI-Swagger%203-darkgreen.svg)](https://swagger.io/)
 [![License](https://img.shields.io/badge/License-MIT-lightgrey.svg)](LICENSE)
 
-An enterprise-grade, multi-tier REST API backend developed in **Java 17** and **Spring Boot 3** for cryptocurrency portfolio management, real-time balance tracking, and automated trading order lifecycles.
+A multi-tier REST API backend developed in **Java 17** and **Spring Boot 3** for cryptocurrency portfolio management, real-time balance tracking, and order lifecycle management.
 
-Built with a strong emphasis on **clean architecture**, **SOLID design principles** (notably Single Responsibility Principle), **DTO decoupling via MapStruct**, and **Role-Based Access Control (RBAC)** with Spring Security.
+Built with a strong emphasis on **clean layered architecture**, **SOLID design principles**, **DTO contract decoupling via MapStruct**, and **Role-Based Access Control (RBAC)** with Spring Security.
 
 ---
 
 ## Architecture Overview
 
-The system strictly adheres to the **Layered (3-Tier) Architecture** to ensure clean separation of concerns, high testability, and seamless maintainability:
+The system strictly adheres to the **Layered (3-Tier) Architecture** to ensure clean separation of concerns, loose coupling, and maintainability:
 
 ```mermaid
 flowchart TD
@@ -75,7 +75,7 @@ flowchart TD
 * **Wallet Management:** Multi-currency balance accounting linking fiat balances to individual cryptocurrency positions.
 * **Transaction Ledger:** Immutable historical records tracking all balance debits and credits across users.
 
-### 3. Enterprise Security & Method-Level RBAC
+### 3. Role-Based Access Control (RBAC) & Endpoint Security
 * Configured with **Spring Security 6** with method-level authorization (`@EnableMethodSecurity`, `@PreAuthorize("hasRole('USER')")`).
 * Password hashing using **BCrypt** with 10 salt rounds.
 * In-memory test accounts pre-configured for instant evaluation.
